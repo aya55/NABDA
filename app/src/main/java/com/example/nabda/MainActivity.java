@@ -52,6 +52,8 @@ private CardView cv1 , cv2,cv3,cv4,cv5,cv6,cv7,cv8,cv9,cv10;
             case R.id.cv6:i=new Intent(this,CV6.class);startActivity(i);break;
             case R.id.cv7:i=new Intent(this,CV7.class);startActivity(i);break;
             case R.id.cv8:i=new Intent(this,CV8.class);startActivity(i);break;
+            case R.id.cv9:i=new Intent(this,CV9.class);startActivity(i);break;
+
             default:break;
 
 

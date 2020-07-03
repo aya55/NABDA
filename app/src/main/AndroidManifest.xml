@@ -9,7 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CV7"></activity>
+        <activity android:name=".Cv11"></activity>
+        <activity android:name=".CV9" />
+        <activity android:name=".Cv16" />
+        <activity android:name=".Cv15" />
+        <activity android:name=".Cv14" />
+        <activity android:name=".Cv13" />
+        <activity android:name=".Cv12" />
+        <activity android:name=".CV7" />
         <activity android:name=".CV8" />
         <activity android:name=".CV6" />
         <activity android:name=".CV5" />
