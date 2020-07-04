@@ -1,238 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-<GridLayout
-    android:id="@+id/grad"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:columnCount="1"
-    android:rowCount="10"
-    android:alignmentMode="alignMargins"
-
-    >
-<androidx.cardview.widget.CardView
-    android:id="@+id/cv1"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_columnWeight="1"
-    android:layout_rowWeight="1"
-    android:layout_margin="12dp"
-    app:cardElevation="12dp"
-    app:cardCornerRadius="6dp"
-
-    >
-    <ImageView
-        android:id="@+id/a"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:scaleType="centerCrop"
-        android:contentDescription="@string/app_name"
-        android:src="@drawable/a"
-        />
-
-</androidx.cardview.widget.CardView>
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cv2"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_columnWeight="1"
-        android:layout_rowWeight="1"
-        android:layout_margin="12dp"
-        app:cardElevation="12dp"
-        app:cardCornerRadius="6dp"
-
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         >
-        <ImageView
-            android:id="@+id/b"
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="140dp"
+            android:layout_marginTop="40dp"
+            android:text="Registeration"
+            android:textSize="16sp"
+            android:textColor="#000"
+            android:id="@+id/te1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="140dp" />
+        <EditText
+            android:id="@+id/user"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:scaleType="centerCrop"
-            android:contentDescription="@string/app_name"
-            android:src="@drawable/b"
-            />
-
-    </androidx.cardview.widget.CardView>
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cv3"
-
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_columnWeight="1"
-        android:layout_rowWeight="1"
-        android:layout_margin="12dp"
-        app:cardElevation="12dp"
-        app:cardCornerRadius="6dp"
-
-        >
-        <ImageView
-            android:id="@+id/c"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/te1"
+            android:layout_marginTop="10dp"
+            android:hint="User Name"
+            android:textSize="15sp"
+            android:layout_marginLeft="30dp"
+            app:layout_constraintStart_toStartOf="parent"/>
+        <EditText
+            android:id="@+id/pas"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:scaleType="centerCrop"
-            android:contentDescription="@string/app_name"
-            android:src="@drawable/c"
-            />
-
-    </androidx.cardview.widget.CardView>
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cv4"
-
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_columnWeight="1"
-        android:layout_rowWeight="1"
-        android:layout_margin="12dp"
-        app:cardElevation="12dp"
-        app:cardCornerRadius="6dp"
-
-        >
-        <ImageView
-            android:id="@+id/d"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/user"
+            android:layout_marginTop="10dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textSize="15sp"
+            android:layout_marginLeft="30dp"
+            app:layout_constraintStart_toStartOf="parent"/>
+        <Button
             android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:scaleType="centerCrop"
-            android:contentDescription="@string/app_name"
-            android:src="@drawable/d"
-            />
-
-    </androidx.cardview.widget.CardView>
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cv5"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_columnWeight="1"
-        android:layout_rowWeight="1"
-        android:layout_margin="12dp"
-        app:cardElevation="12dp"
-        app:cardCornerRadius="6dp"
-
-        >
-        <ImageView
-            android:id="@+id/e"
+            android:layout_height="wrap_content"
+            android:id="@+id/but1"
+            app:layout_constraintTop_toBottomOf="@id/pas"
+            android:layout_marginTop="10dp"
+            android:text="Log in"
+            android:textColor="#000"
+            android:background="#FAF7F7"
+            android:textStyle="bold"
+            android:textSize="15sp"/>
+        <Button
+            android:id="@+id/but2"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:scaleType="centerCrop"
-            android:contentDescription="@string/app_name"
-            android:src="@drawable/e"
-            />
-
-    </androidx.cardview.widget.CardView>
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cv6"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_columnWeight="1"
-        android:layout_rowWeight="1"
-        android:layout_margin="12dp"
-        app:cardElevation="12dp"
-        app:cardCornerRadius="6dp"
-
-        >
-        <ImageView
-            android:id="@+id/f"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:scaleType="centerCrop"
-            android:contentDescription="@string/app_name"
-            android:src="@drawable/f"
-            />
-
-    </androidx.cardview.widget.CardView>
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cv7"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_columnWeight="1"
-        android:layout_rowWeight="1"
-        android:layout_margin="12dp"
-        app:cardElevation="12dp"
-        app:cardCornerRadius="6dp"
-
-        >
-        <ImageView
-            android:id="@+id/g"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:scaleType="centerCrop"
-            android:contentDescription="@string/app_name"
-            android:src="@drawable/g"
-            />
-
-    </androidx.cardview.widget.CardView>
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cv8"
-
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_columnWeight="1"
-        android:layout_rowWeight="1"
-        android:layout_margin="12dp"
-        app:cardElevation="12dp"
-        app:cardCornerRadius="6dp"
-
-        >
-        <ImageView
-            android:id="@+id/h"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:scaleType="centerCrop"
-            android:contentDescription="@string/app_name"
-            android:src="@drawable/h"
-            />
-
-    </androidx.cardview.widget.CardView>
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cv9"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_columnWeight="1"
-        android:layout_rowWeight="1"
-        android:layout_margin="12dp"
-        app:cardElevation="12dp"
-        app:cardCornerRadius="6dp"
-
-        >
-        <ImageView
-            android:id="@+id/i"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:scaleType="centerCrop"
-            android:contentDescription="@string/app_name"
-            android:src="@drawable/i"
-            />
-
-    </androidx.cardview.widget.CardView>
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cv10"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_columnWeight="1"
-        android:layout_rowWeight="1"
-        android:layout_margin="12dp"
-        app:cardElevation="12dp"
-        app:cardCornerRadius="6dp"
-
-        >
-        <ImageView
-            android:id="@+id/k"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:scaleType="centerCrop"
-            android:contentDescription="@string/app_name"
-            android:src="@drawable/k"
-            />
-
-    </androidx.cardview.widget.CardView>
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/but1"
+            android:layout_marginTop="10dp"
+            android:text="Sing Up"
+            android:textColor="#000"
+            android:background="#FAF7F7"
+            android:textStyle="bold"
+            android:textSize="15sp"/>
 
 
 
 
 
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-</GridLayout>
 
-</ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
