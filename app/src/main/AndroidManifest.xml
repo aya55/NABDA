@@ -9,8 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".cardd"></activity>
-        <activity android:name=".cardview" />
+        <activity android:name=".cardd"
+            android:theme="@style/AppTheme.NoActionBar">
+            ></activity>
         <activity android:name=".Cv11" />
         <activity android:name=".CV9" />
         <activity android:name=".Cv16" />
@@ -27,6 +28,8 @@
         <activity android:name=".cv2" />
         <activity android:name=".cv1" />
         <activity android:name=".MainActivity">
+
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
